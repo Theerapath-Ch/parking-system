@@ -166,9 +166,9 @@ export default function App() {
 
               <tr>
 
-                <th className="p-3">Plate</th>
-                <th>Entry</th>
-                <th>Duration</th>
+                <th className="p-3">เลขทะเบียน</th>
+                <th>เวลาเข้า</th>
+                <th>ระยะเวลา</th>
                 <th>Action</th>
 
               </tr>
@@ -192,17 +192,17 @@ export default function App() {
 
                   <tr key={index} className="border-t">
 
-                    <td className="p-3">{car.plate}</td>
+                    <td className="p-3 text-center">{car.plate}</td>
 
-                    <td>
+                    <td className="text-center">
                       {car.entry.toLocaleTimeString()}
                     </td>
 
-                    <td>
+                    <td className="text-center">
                       {hours}h {minutes}m
                     </td>
 
-                    <td>
+                    <td className="text-center">
 
                       <button
                         onClick={() => setSelectedCar(car)}
