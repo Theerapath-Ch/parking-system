@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useRef } from "react"
 import { useReactToPrint } from "react-to-print"
-import Receipt from "./component/receipt"
+import Receipt from "./component/Receipt"
 
 interface Car {
   plate: string
